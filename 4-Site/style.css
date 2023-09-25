@@ -1,0 +1,88 @@
+/* Definiçoes gerais da pagina */
+
+html {
+    min-height: 100vh;
+}
+
+body {
+    background-color: rgb(36, 36, 36);
+    color: aliceblue;
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+/* Elementos que estao em sentido horizontal (row) - FLEX */
+header, .lista-navegacao, .principal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;   
+}
+
+/* Definiçao de cores das seçoes basicas*/
+header, aside, footer {
+    background-color: aliceblue;
+    color: rgb(36, 36, 36);
+    padding: 1em;
+} 
+
+header {
+    align-items: center;
+}
+
+main {
+    flex-basis: 70%;
+}
+
+aside {
+    border-radius: 15px;
+    flex-basis: 20%;
+    min-width: 300px;
+}
+
+footer {
+    text-align: center;
+    height: 100%;
+}
+
+h1 {
+    font-size: 2em;
+    color: #27275e;
+    padding: .5em;
+}
+
+aside a {
+    color: rgb(36, 36, 36);
+}
+
+.titulo-main {
+    color: rgb(253, 230, 166);
+}
+
+.lista-navegacao {
+    list-style: none;
+}
+
+.botao {
+    background-color: #43439b;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.botao a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.principal {
+    padding: 1em;
+}
+
+#whatsapp {
+    color: greenyellow;
+}
+
+#facebook {
+    color: rgb(81, 113, 255);
+}
