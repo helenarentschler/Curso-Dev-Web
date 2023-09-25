@@ -1,0 +1,37 @@
+body {
+    background-color: rgb(160, 160, 160);
+}
+
+div {
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    border-radius: 50%;
+    position: relative;
+    background-image: url(pneu.png);
+    background-size: contain;
+    animation: rodar 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rodar {
+
+ from {
+    transform: rotate(0);
+    top: 0;
+    left: 0;
+ }
+
+ to {
+    transform: rotate(360deg);
+    top: 0;
+    left: 1000px;
+ }
+
+}
+
+
+
+
+

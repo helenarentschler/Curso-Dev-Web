@@ -1,0 +1,50 @@
+html {
+    text-align: center;
+    background-color: rgb(242, 230, 216);
+    font-family: 'Roboto', sans-serif;
+    color: #413125;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h1, h2 {
+    font-family: 'Tangerine', cursive;
+}
+
+img {
+    border: solid 6px #ab8264;
+    border-radius: 8px;
+    width: 300px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+button {
+    color: #e1bba0;
+    background-color: #413125;
+    border: 0;
+    border-radius: 8px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+#preco {
+    font-size: 26px;
+}
+
+.aceito {
+    color: green;
+}
+
+.negado {
+    color: red;
+}

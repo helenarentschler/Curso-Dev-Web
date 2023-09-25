@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta Trunfo</title>
+    <style>
+        
+        html {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: white;
+            background-image: url(praia.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        body {
+            margin: 20px auto;
+            max-width: 300px;
+            max-height: 100%;
+            padding: 15px;
+            border: solid 3px white;
+            border-radius: 15px;
+            background: rgb(34,193,195);
+            background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+        }
+
+        p {
+            font-size: 2rem;
+            margin: 5px;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: black;
+        }
+
+        h1 {
+            color: rgb(99, 255, 242);
+            font-style: italic;
+            font-size: 2.2rem;
+            text-shadow: 2px 2px #505050;
+            border-radius: 15px;
+            padding: 7px 10px;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: black;
+        }
+
+        div {
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 15px;
+        }
+
+        ul {
+            color: rgb(111, 111, 111);
+            list-style: none;
+            padding: 10px;
+        }
+
+        li {
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 15px;
+            padding: 7px 10px;
+            margin-bottom: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <p>A1</p>
+    <h1>Vira-lata Caramelo</h1>
+    <div>
+        <img src="cachorro-caramelo.webp" alt="Cachorrinho caramelo brasileiro deitadinho">
+    </div>
+    <ul>
+        <li>Força: 7</li>
+        <li>Velocidade: 8</li>
+        <li>Inteligencia: 10</li>
+        <li>Fofura: 10</li>
+        <li>Tamanho: 5</li>
+    </ul>
+    <script>
+        
+        let imagem = document.querySelector('img');
+
+        imagem.addEventListener('click', function() {
+
+            let atributo = imagem.getAttribute("src");
+
+            if(atributo == "cachorro-caramelo.webp") {
+
+                imagem.setAttribute("src", "cachorro-2.png");
+
+            } else {
+
+                imagem.setAttribute("src", "cachorro-caramelo.webp");
+            }
+        });
+    </script>
+</body>
+</html>
