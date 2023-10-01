@@ -61,8 +61,26 @@ body = document.querySelector("body");
 
 body.appendChild(div);
 
-body.innerHTML += "<p>Novo paragrafo gerado por HTML!!</p>";
+body.innerHTML += "<p>Novo paragrafo gerado por JavaScript!!</p>";
 
 
 //Exercicios
 
+//4)
+function formatar(cpf) {
+
+    window.alert(`${cpf.slice(0, 3)}.${cpf.slice(3, 6)}.${cpf.slice(6, 9)}-${cpf.slice(9, 12)}`);
+}
+
+function validar(cpf) {
+
+    if(cpf.length == 11) {
+        formatar(cpf);
+    } else {
+        window.alert("Invalido!");
+    }
+}
+
+cpf = window.prompt("Digite seu cpf sem pontos ou traço:","");
+
+validar(cpf);
