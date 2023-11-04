@@ -1,4 +1,4 @@
-export default function verificarColisao(gato, chao, chao2, obstaculo) {
+export default function verificarColisao(gato, chao, chao2, obstaculo, enderecoGato) {
 
     const obstaculoAltura = obstaculo.offsetHeight;
 
@@ -19,7 +19,7 @@ export default function verificarColisao(gato, chao, chao2, obstaculo) {
         obstaculo.style.left = gatoEsquerda + "px";
         gato.style.animation = "none";
         gato.style.bottom = gatoDistanciaChao;
-        gato.setAttribute("src", "imagens/animacoes-gato/gato1/gato.gif");
+        gato.setAttribute("src", `imagens/${enderecoGato}/gato.gif`);
 
         return true;
     }     

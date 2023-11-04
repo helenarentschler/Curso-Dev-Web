@@ -4,8 +4,6 @@ export default function exibirOpcoes(event, div) {
 
     const pata = event.target;
 
-    console.log(pata.offsetLeft);
-
     const opcao = pata.getAttribute("src");
     const imagem = div.querySelector("img");
     const titulo =  div.querySelector("h1");

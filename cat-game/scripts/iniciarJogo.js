@@ -1,5 +1,5 @@
 //funçao para inciar o jogo
-export default function inicializar(mensagem, chao, chao2, gato, obstaculo) {
+export default function inicializar(mensagem, chao, chao2, gato, obstaculo, enderecoGato) {
 
     //mensagem desaparece da tela
     mensagem.classList.add("sumir")
@@ -9,8 +9,11 @@ export default function inicializar(mensagem, chao, chao2, gato, obstaculo) {
     chao.classList.add("animar-chao");
 
     //animando gato
-    gato.setAttribute("src", "imagens/animacoes-gato/gato1/correndo.gif");
+    console.log(enderecoGato);
+    gato.setAttribute("src", `imagens/${enderecoGato}/correndo.gif`);
 
     //animando obstaculo
     obstaculo.classList.add("animar-obstaculo");
+
+    return true;
 }

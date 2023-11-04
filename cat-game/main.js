@@ -4,6 +4,7 @@ import verificarColisao from "./scripts/verificarColisao.js";
 import pular from "./scripts/pular.js";
 import mudarObstaculo from "./scripts/mudarObstaculo.js";
 import exibirOpcoes from "./scripts/exibirOpcoes.js";
+import selecionarGato from "./scripts/selecionarGato.js";
 
 // selecionando imagens
 const mensagem = document.querySelector("#mensagem");
@@ -14,6 +15,9 @@ const pontos = document.querySelector("#pontuacao span");
 const botao = document.querySelector("#recomecar");
 const menu = document.querySelector("#escolher");
 const div = document.querySelector(".infos");
+
+let iniciou = false;
+let enderecoGato = "animacoes-gato/gato1";
 
 // Inicialmente, estes elementos nao existem na tela e devem ser criados via javascript 
 
@@ -36,8 +40,18 @@ botao.addEventListener("click", () => {
 });
 
 menu.addEventListener("mouseover", (event) => {
+    
 
-    exibirOpcoes(event, div);
+    if(!iniciou) {
+        exibirOpcoes(event, div);
+    }
+});
+
+menu.addEventListener("click", (event) => {
+
+    if(!iniciou) {
+        enderecoGato = selecionarGato(gato, event);
+    }
 });
 
 menu.addEventListener("mouseout", () => {
@@ -48,11 +62,11 @@ menu.addEventListener("mouseout", () => {
 
 document.addEventListener("keydown", () => {
 
-    iniciarJogo(mensagem, chao, chao2, gato, obstaculo);
+    iniciou = iniciarJogo(mensagem, chao, chao2, gato, obstaculo, enderecoGato);
     
     const verificador = setInterval(() => {
 
-        if(verificarColisao(gato, chao, chao2, obstaculo)) {
+        if(verificarColisao(gato, chao, chao2, obstaculo, enderecoGato)) {
             clearInterval(verificador);
         }
     
@@ -62,7 +76,7 @@ document.addEventListener("keydown", () => {
 
     const contadorDePontos = setInterval(()=> {
 
-        if(verificarColisao(gato, chao, chao2, obstaculo)) {
+        if(verificarColisao(gato, chao, chao2, obstaculo, enderecoGato)) {
             clearInterval(contadorDePontos);
         }
 
@@ -73,8 +87,8 @@ document.addEventListener("keydown", () => {
 });
 
 document.addEventListener("keydown", (event) => {
-    if(gato.getAttribute("src") != "imagens/animacoes-gato/gato1/pulando.png" && !verificarColisao(gato, chao, chao2, obstaculo)) {
-        pular(event, gato);
+    if(gato.getAttribute("src") != `imagens/${enderecoGato}/pulando.png` && !verificarColisao(gato, chao, chao2, obstaculo, enderecoGato)) {
+        pular(event, gato, enderecoGato);
     }
 });
 
