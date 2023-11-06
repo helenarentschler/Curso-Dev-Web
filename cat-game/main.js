@@ -1,5 +1,6 @@
 //importando funçoes js
 import iniciarJogo from "./scripts/iniciarJogo.js";
+
 import verificarColisao from "./scripts/verificarColisao.js";
 import pular from "./scripts/pular.js";
 import mudarObstaculo from "./scripts/mudarObstaculo.js";
