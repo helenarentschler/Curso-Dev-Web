@@ -20,6 +20,7 @@ header {
     font-size: 24px;
     display: flex;
     flex-wrap: wrap;
+    gap: 20px;
     justify-content:center;
     background-color: var(--B);
 }
@@ -30,7 +31,12 @@ header {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    color: #FDE4C8;
+    color: var(--D);
+}
+
+#logo a {
+    color: var(--D);
+    text-decoration: none;
 }
 
 #paw {
@@ -47,7 +53,7 @@ header {
     gap: 0;
     justify-content: left;
     align-items: flex-start;
-    width: 400px;
+    max-width: 400px;
     height: 100px;
 }
 
@@ -86,10 +92,6 @@ header {
 }
 
 /* Configuraçoes do Jogo */
-
-img {
-    max-width: 100%;
-}
 
 #gato {
     position: absolute;
@@ -200,10 +202,9 @@ img {
 
 
 #pontuacao {
-    position: absolute;
+    float: right;
+    margin: 20px;
     color: aliceblue;
-    top: 150px;
-    right: 40px;
 }
 
 #recomecar {
@@ -240,4 +241,29 @@ img {
 .infos ul {
     padding: 0;
     list-style: none;
+}
+
+#warning {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 900px) {
+
+    header {
+        font-size: 14px;
+        padding-inline: 10px;
+        padding-bottom: 10px;
+    }
+
+    main {
+        display: none;
+    }
+
+    #warning {
+        display: block;
+        color: var(--D);
+        font-size: 24px;
+    }
 }
