@@ -6,7 +6,7 @@ export default function selecionarGato(gato, event) {
 
     if(opcao == "imagens/paw-1.png") {
 
-        gato.setAttribute("src", "imagens/animacoes-gato/gato1/gato.gif");
+        gato.setAttribute("src", "imagens/animacoes-gato/gato1/gato.png");
 
         return "animacoes-gato/gato1";
     
@@ -18,8 +18,9 @@ export default function selecionarGato(gato, event) {
     
     } else if(opcao == "imagens/paw-3.png") {
 
-        gato.setAttribute("src", "imagens/animacoes-gato/gato3/gato.png");
+        gato.setAttribute("src", "imagens/animacoes-gato/gato3/gato.gif");
 
         return "animacoes-gato/gato3";
     }
 }
+

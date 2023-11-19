@@ -1,6 +1,5 @@
 //importando funçoes js
 import iniciarJogo from "./scripts/iniciarJogo.js";
-
 import verificarColisao from "./scripts/verificarColisao.js";
 import pular from "./scripts/pular.js";
 import mudarObstaculo from "./scripts/mudarObstaculo.js";
@@ -14,6 +13,7 @@ const tela = document.querySelector("#jogo");
 const chao = document.querySelector("#chao");
 const pontos = document.querySelector("#pontuacao span");
 const botao = document.querySelector("#recomecar");
+
 const menu = document.querySelector("#escolher");
 const div = document.querySelector(".infos");
 
@@ -92,4 +92,3 @@ document.addEventListener("keydown", (event) => {
         pular(event, gato, enderecoGato);
     }
 });
-

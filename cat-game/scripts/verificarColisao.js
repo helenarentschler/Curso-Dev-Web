@@ -15,14 +15,17 @@ export default function verificarColisao(gato, chao, chao2, obstaculo, enderecoG
 
         chao.style.animation = "none";
         chao2.style.animation = "none";
+        chao.style.left = chao.offsetLeft;
+        chao2.style.left = chao2.offsetLeft;
         obstaculo.style.animation = "none";
         obstaculo.style.left = gatoEsquerda + "px";
         gato.style.animation = "none";
         gato.style.bottom = gatoDistanciaChao;
-        gato.setAttribute("src", `imagens/${enderecoGato}/gato.gif`);
+        gato.setAttribute("src", `imagens/${enderecoGato}/gato.png`);
 
         return true;
     }     
 
     return false;
 }
+

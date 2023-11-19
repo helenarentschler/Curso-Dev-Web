@@ -12,24 +12,24 @@ export default function exibirOpcoes(event, div) {
     if(opcao == "imagens/paw-1.png") {
 
         imagem.setAttribute("src", "imagens/fotos/gato1.png");
-        titulo.innerText = "Mimosa";
-        lista.innerHTML = "<li>x anos</li><li>Fofinha</li><li>Calma</li>";
+        titulo.innerText = "Lara";
+        lista.innerHTML = "<li>4 anos</li><li>Carinhosa</li><li>Ama lasers</li>";
 
         div.style.left = pata.offsetLeft + "px";
 
     } else if(opcao == "imagens/paw-2.png") {
 
         imagem.setAttribute("src", "imagens/fotos/gato2.png");
-        titulo.innerText = "Violeta";
-        lista.innerHTML = "<li>1 ano</li><li>Fotogenica</li><li>Comilona</li>";
+        titulo.innerText = "Nome";
+        lista.innerHTML = "<li>op</li><li>op</li><li>op</li>";
 
         div.style.left = pata.offsetLeft + "px";
 
     } else if(opcao == "imagens/paw-3.png") {
 
         imagem.setAttribute("src", "imagens/fotos/gato3.png");
-        titulo.innerText = "Lara";
-        lista.innerHTML = "<li>4 anos</li><li>Carinhosa</li><li>Ama lasers</li>";
+        titulo.innerText = "Nome";
+        lista.innerHTML = "<li>op</li><li>op</li><li>op</li>";
 
         div.style.left = pata.offsetLeft + "px";
     }

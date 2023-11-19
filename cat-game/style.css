@@ -96,7 +96,7 @@ header {
 #gato {
     position: absolute;
     width: 200px;
-    bottom: 60px;
+    bottom: 100px;
     left: 20px;
 }
 
@@ -142,7 +142,7 @@ header {
 @keyframes pular {
     
     0% {
-        bottom: 60px;
+        bottom: 100px;
     }
 
     40% {
@@ -158,7 +158,7 @@ header {
     }
 
     100% {
-        bottom: 60px;
+        bottom: 100px;
     }
 }
 
@@ -178,21 +178,21 @@ header {
 
 .obstaculo {
     position: absolute;
-    bottom: 60px;
+    bottom: 100px;
     /* começa fora da tela */
-    right: -380px;
-    width: 380px;
+    right: -200px;
+    width: 200px;
 }
 
 .animar-obstaculo {
-    animation: animacao-obstaculo 3.8s infinite linear forwards;
+    animation: animacao-obstaculo 3.4s infinite linear forwards;
 }
 
 @keyframes animacao-obstaculo {
     
     from {
         /* começa fora da tela */
-        right: -380px;
+        right: -200px;
     }
 
     to {
