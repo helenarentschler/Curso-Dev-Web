@@ -13,23 +13,23 @@ export default function exibirOpcoes(event, div) {
 
         imagem.setAttribute("src", "imagens/fotos/gato1.png");
         titulo.innerText = "Lara";
-        lista.innerHTML = "<li>4 anos</li><li>Carinhosa</li><li>Ama lasers</li>";
+        lista.innerHTML = "<li>Carinhosa</li><li>Ama lasers</li>";
 
         div.style.left = pata.offsetLeft + "px";
 
     } else if(opcao == "imagens/paw-2.png") {
 
         imagem.setAttribute("src", "imagens/fotos/gato2.png");
-        titulo.innerText = "Nome";
-        lista.innerHTML = "<li>op</li><li>op</li><li>op</li>";
+        titulo.innerText = "Wanda";
+        lista.innerHTML = "<li>Timida</li><li>muito brincalhona</li>";
 
         div.style.left = pata.offsetLeft + "px";
 
     } else if(opcao == "imagens/paw-3.png") {
 
         imagem.setAttribute("src", "imagens/fotos/gato3.png");
-        titulo.innerText = "Nome";
-        lista.innerHTML = "<li>op</li><li>op</li><li>op</li>";
+        titulo.innerText = "Ferrugem";
+        lista.innerHTML = "<li>Muito carinhoso e meigo</li>";
 
         div.style.left = pata.offsetLeft + "px";
     }

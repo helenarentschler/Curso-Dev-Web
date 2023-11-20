@@ -21,12 +21,15 @@ header {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content:center;
+    justify-content:space-around;
     background-color: var(--B);
 }
 
+p {
+    color: white;
+}
+
 #logo {
-    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,7 +51,6 @@ header {
 }
 
 #escolher {
-    flex: 1;
     display: flex;
     gap: 0;
     justify-content: left;
@@ -58,6 +60,7 @@ header {
 }
 
 #escolher>img {
+    width: 140px;
     cursor: pointer;
     transition: transform 1s;
 }
@@ -67,10 +70,10 @@ header {
 }
 
 #botoes {
-    flex:1;
     display: flex;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
+    gap: 20px;
 }
 
 #botao-sobre {
@@ -81,6 +84,10 @@ header {
     text-align: center;
     text-decoration: none;
     padding: 10px;
+}
+
+.logos {
+    width: 130px;
 }
 
 #mensagem {
